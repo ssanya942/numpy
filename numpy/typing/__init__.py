@@ -45,14 +45,14 @@ example,
 
 is valid NumPy code which will create a 0-dimensional object
 array. Type checkers will complain about the above example when using
-the NumPy types however. If you really intended to do the above, then
+the NumPy types. However, if you really intended to do the above, then
 you can either use a ``# type: ignore`` comment:
 
 .. code-block:: python
 
     >>> np.array(x**2 for x in range(10))  # type: ignore
 
-or explicitly type the array like object as `~typing.Any`:
+or explicitly type the array-like object as `~typing.Any`:
 
 .. code-block:: python
 
